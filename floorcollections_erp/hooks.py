@@ -247,3 +247,25 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+doc_events = {
+    "Sales Order": {
+        "after_insert": (
+            "floorcollections_erp.sales_flow.sales_order_direct."
+            "sales_order_after_insert"
+        ),
+        "on_update": (
+            "floorcollections_erp.sales_flow.sales_order_direct."
+            "sales_order_on_update"
+        ),
+        "on_submit": (
+            "floorcollections_erp.sales_flow.sales_order_direct."
+            "sales_order_on_submit"
+        ),
+    },
+    "Customer": {
+        "after_insert": (
+            "floorcollections_erp.sales_flow.customer_lead."
+            "customer_after_insert"
+        ),
+    },
+}

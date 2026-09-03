@@ -269,3 +269,8 @@ doc_events = {
         ),
     },
 }
+
+doctype_js = {
+    "Quotation": "public/js/sqft_calculator.js",
+    "Sales Order": "public/js/sqft_calculator.js",
+}
